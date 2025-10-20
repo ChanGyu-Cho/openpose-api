@@ -13,7 +13,7 @@ ngrok config add-authtoken <YOUR_TOKEN>
 ngrok http 19030
 ```
 
-Endpoint
+# Endpoint
 
 POST /openpose_predict
 Base URL (default): http://localhost:19030/openpose_predict
@@ -34,15 +34,18 @@ Some wrappers return 18 points (incl. Neck) or 17 (COCO).
 
 Client can normalize to COCO-17.
 
-🧪 Batch client → CSV (COCO-17)
+# 🧪 Batch client → CSV (COCO-17)
 
 Use the provided client to process all images and write skeleton2d.csv:
 
+```bash
 python openpose-api_test.py --image-dir ./color --output ./result
-# → ./result/skeleton2d.csv
-# Columns: Nose_x, Nose_y, Nose_c, LEye_x, ..., RAnkle_c
+```
 
-🧱 Pipeline (context)
+## → ./result/skeleton2d.csv
+## Columns: Nose_x, Nose_y, Nose_c, LEye_x, ..., RAnkle_c
+
+# 🧱 Pipeline (context)
 [Images/Frames] --POST--> OpenPose API --CSV--> skeleton2d.csv
 
 🛠️ Troubleshooting
