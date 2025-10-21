@@ -6,6 +6,8 @@ GPU-enabled Docker image exposing an HTTP API for 2D keypoint extraction (COCO-1
 
 CUDA 12.4 base, but it will work fine in any 12 environment.
 
+FastAPI Base
+
 ---
 
 ## 🚀 Quickstart
@@ -59,6 +61,8 @@ BODY_25 vs COCO: verify model; client remaps to COCO-17 when possible.
 # runpod enviroment
 
 Confirmed to work well on rtx 4000ada
+
+https://console.runpod.io/deploy?template=vjg2af0yob&ref=ib9s4r6y  
 
 # 🇰🇷 한글 요약
 
